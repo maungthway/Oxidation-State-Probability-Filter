@@ -12,17 +12,21 @@ Install all required packages:
 pip install -r requirement.txt
 ```
 
-# How to update the probability database of a tenary system
+# How to use the OSP filter on a tenary system
 Update the Section 1 (define variables) in element_focused_CS_analyzer.py
 
-## reading database (You may query it through Material Project)
+## database 
 df = pd.read_hdf("all_known_materials.h5")
+#You may query it through Material Project
 
-## maximum number in a compound to be generated
+## maximum number of atoms in a compound to be generated
 max_atom_in_compound = 10
 
-## to be used to ignore low frequency charge states
+## threshold to ignore low frequency charge states
 cut_off_freq_percentage = 0.1 
 
-## the tenary system that you are interested to update
+## the tenary system that you are interested 
 elements_2find_original = ['Cu','V', 'Nb']
+
+## file generation 
+after running the element_focused_CS_analyzer.py until the last Section 14, a csv file that include the OSP will be generated. 
