@@ -5,9 +5,24 @@ The OSP filtering method calculates the likelihood of each element adopting vari
 
 By focusing exclusively on compounds that satisfy the charge neutrality condition, the OSP filtering method streamlines the analysis, making it an invaluable resource for researchers in the material design field. It aids in the efficient identification of viable compounds for further exploration or synthesis, serving as a predictive tool in the material design process.
 
-# How to use the model
+# How to use the filter
 Install all required packages:
 
 ```bash
 pip install -r requirement.txt
 ```
+
+# How to update the probability database of a tenary system
+Update the Section 1 (define variables) in element_focused_CS_analyzer.py
+
+#reading database (You may query it through Material Project)
+df = pd.read_hdf("all_known_materials.h5")
+
+#maximum number in a compound to be generated
+max_atom_in_compound = 10
+
+#to be used to ignore low frequency charge states
+cut_off_freq_percentage = 0.1 
+
+#the tenary system that you are interested to update
+elements_2find_original = ['Cu','V', 'Nb']
