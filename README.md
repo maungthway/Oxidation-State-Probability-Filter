@@ -15,14 +15,14 @@ pip install -r requirement.txt
 # How to update the probability database of a tenary system
 Update the Section 1 (define variables) in element_focused_CS_analyzer.py
 
-#reading database (You may query it through Material Project)
+## reading database (You may query it through Material Project)
 df = pd.read_hdf("all_known_materials.h5")
 
-#maximum number in a compound to be generated
+## maximum number in a compound to be generated
 max_atom_in_compound = 10
 
-#to be used to ignore low frequency charge states
+## to be used to ignore low frequency charge states
 cut_off_freq_percentage = 0.1 
 
-#the tenary system that you are interested to update
+## the tenary system that you are interested to update
 elements_2find_original = ['Cu','V', 'Nb']
