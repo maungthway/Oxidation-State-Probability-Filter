@@ -17,7 +17,6 @@ from statistics import mean
 # Section 1 (define variables)
 
 #reading database
-#df = pd.read_csv('all_data_below2018_9June2022.csv')
 df = pd.read_hdf("all_materials_9June2022.h5")
 
 #maximum number in a compound to be generated
