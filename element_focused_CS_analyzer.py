@@ -567,7 +567,7 @@ d2s = pd.DataFrame ({'composition' : name_comp, 'Atoms' : filtered_atom_counts,
 
 
 #%% 
-# Section 15 (Definitions to find icsd_ids)
+# Section 12 (Definitions to find icsd_ids)
 
 formula_list = list(d2s["composition"])
 
@@ -585,7 +585,7 @@ x3 = [elements_2find[2] in x for x in df_filtered['elements']]
 df_filtered = df_filtered[[a and b and c for a,b,c in zip(x1,x2,x3)]]
 
 #%%
-# Section 16 (find icsd_id and others paramters)
+# Section 13 (find icsd_id and others paramters)
 
 icsd_ids = [[] for _ in range(len(formula_list))]
 mp_ids = [[] for _ in range(len(formula_list))]
@@ -634,7 +634,7 @@ attached_data2save = pd.concat(frames, axis=1)
 #attached_data2save.head(2)
 
 #%%
-#Section 18 (Save Data)
+#Section 14 (Save Data)
 filename = 'Summary_ternary'
 for i in elements_2find:
     filename = filename + '_' + i
