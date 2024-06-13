@@ -1,0 +1,8 @@
+sympy
+scipy
+numpy
+pymatgen
+plotly
+python-ternary
+matminer
+pandas
