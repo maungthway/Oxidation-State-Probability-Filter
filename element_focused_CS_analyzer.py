@@ -27,7 +27,7 @@ cut_off_freq_percentage = 0.1
 
 
 #the element of the ternary system
-elements_2find_original = ['Cu','V', 'Nb']
+elements_2find_original = ['Cu','Mn', 'O']
 
 
 #%% 
@@ -643,3 +643,5 @@ attached_data2save.to_csv(file_name)
 print('Saved ', file_name)
 print('-'*30)
 
+
+# %%
