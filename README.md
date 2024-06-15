@@ -11,6 +11,9 @@ Compitable with python3.10. Install all required packages:
 ```bash
 pip install -r requirement.txt
 ```
+# Typical installation and run time
+Setting up a python virtual environment takes up to five mintues with the required packages.
+For elements that has been in the database, running the python file will be done in less than a minute. 
 
 # How to use the OSP filter on a tenary system
 Update the Section 1 (define variables) in element_focused_CS_analyzer.py and run the python file.
@@ -30,9 +33,6 @@ elements_2find_original = ['Cu','V', 'Nb']
 
 ## file generation 
 After running the element_focused_CS_analyzer.py until the last Section 14, a csv file that include the OSP will be generated. 
-
-## typical Run Time
-Typically for elements that has been in the database, the python file will finish running in less than a minute. 
 
 ## updating the database
 If the CP base (charge_probability_database.csv) is outdated, manually delete the entries in the csv file and run "element_focused_CS_analyzer.py". Query new compounds through material project or from a similar source with the datastructure specified above. The codes in Section 1 to 6 will try to analyze the new database file (dataframe) and update the csv file with a new charge probabilty record. 
