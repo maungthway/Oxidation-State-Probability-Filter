@@ -31,8 +31,8 @@ elements_2find_original = ['Cu','V', 'Nb']
 ## file generation 
 After running the element_focused_CS_analyzer.py until the last Section 14, a csv file that include the OSP will be generated. 
 
-## Typical Run Time
+## typical Run Time
 Typically for elements that has been in the database, the python file will finish running in less than a minute. 
 
-## Updating the database
+## updating the database
 If the CP base (charge_probability_database.csv) is outdated, manually delete the entries in the csv file and run "element_focused_CS_analyzer.py". Query new compounds through material project or from a similar source with the datastructure specified above. The codes in Section 1 to 6 will try to analyze the new database file (dataframe) and update the csv file with a new charge probabilty record. 
