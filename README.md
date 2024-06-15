@@ -36,3 +36,6 @@ After running the element_focused_CS_analyzer.py until the last Section 14, a cs
 
 ## updating the database
 If the CP base (charge_probability_database.csv) is outdated, manually delete the entries in the csv file and run "element_focused_CS_analyzer.py". Query new compounds through material project or from a similar source with the datastructure specified above. The codes in Section 1 to 6 will try to analyze the new database file (dataframe) and update the csv file with a new charge probabilty record. 
+
+## an example output
+The code has been run for a ternary system ['Cu','Mn', 'O']. The output csv file is Summary_ternary_Cu_Mn_O.csv. By sorting "normalized_charge_prob" column in decending order, you will easily find the most promising compounds in this ternary system at the top rows.
