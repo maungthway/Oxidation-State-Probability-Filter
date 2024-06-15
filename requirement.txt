@@ -1,8 +1,9 @@
-sympy
-scipy
-numpy
-pymatgen
-plotly
-python-ternary
-matminer
-pandas
+pandas==2.2.2
+pymatgen==2024.6.10
+blosc2==2.6.2
+msgpack==1.0.8
+ndindex==1.8
+numexpr==2.10.0
+py-cpuinfo==9.0.0
+tables==3.9.2
+openpyxl==3.1.4
