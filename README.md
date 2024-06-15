@@ -32,7 +32,7 @@ cut_off_freq_percentage = 0.1
 elements_2find_original = ['Cu','V', 'Nb']
 
 ## file generation 
-After running the element_focused_CS_analyzer.py until the last Section 14, a csv file that include the OSP will be generated. 
+After running the element_focused_CS_analyzer.py until the last Section 14, a csv file that includes the OSP will be generated. 
 
 ## an example output
 The code has been run for a ternary system ['Cu','Mn', 'O']. The output csv file is Summary_ternary_Cu_Mn_O.csv. By sorting "normalized_charge_prob" column in decending order, you will easily find the most promising compounds in this ternary system at the top rows.
